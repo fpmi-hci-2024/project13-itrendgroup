@@ -1,4 +1,4 @@
-###Project Name
+###Project Name###
 InfoTrend
 ###Description
 Портал для просмотра новостей. To be added.
