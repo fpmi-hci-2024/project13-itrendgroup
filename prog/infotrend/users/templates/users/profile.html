@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    
+
+<h1 class="about-h1">Профиль</h1>
+
+<form class='addpost-form' action="" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{next}}">
+    {{ form.as_p }}
+    <hr>
+    <a href="{% url 'users:password_change'%}" class="btn btn-outline-info"> Сменить пароль</a>
+    
+    
+</form>
+</body>
+{% endblock %}

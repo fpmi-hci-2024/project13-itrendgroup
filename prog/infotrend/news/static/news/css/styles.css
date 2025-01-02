@@ -1,0 +1,217 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #444;
+}
+#but{
+    padding-top: 10px;
+}
+.username-p{
+    color: rgb(0, 98, 255);
+    padding-left: 10px;
+}
+
+header {
+    width: 100%;
+    min-height: 75px;
+    background-color: #333;
+    color: #fff;
+    display:flex;
+    position: fixed;
+  }
+.form-error{
+    width: 100%;
+}
+.author-name{
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu{
+    
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    margin-right: 5%;
+    
+}
+main {
+    display: flex;
+}
+aside {
+    background-color: #f1f1f1;
+    width: 200px;
+    padding: 1rem;
+    height: 100%;
+    margin-top: 75px;
+    position: fixed;
+    
+}
+.right_menu-container{
+    padding-top: 20px;
+}
+.right_menu-h1{ 
+    color: black;
+    font-weight: bold;  
+    font-size: 24px;
+    margin-left: 16%;
+}
+
+.right_menu-type li{
+    padding-top: 10%;
+    margin-left: auto;
+}
+.right_menu-type li a{
+    text-decoration: none;
+    color: rgb(143, 124, 0);
+    font-size: 20px;
+    
+}
+section {
+    margin-left: 250px;
+    padding: 1rem;
+    
+}
+ul{
+    list-style: none;
+}
+.main_page-container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menu_links a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo-a{
+    font-size: 32px;
+    color:#fff;
+    text-decoration: none;
+}
+.menu_links-container{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    
+    display:flex;
+    
+}
+.menu_links{
+    white-space: nowrap;
+    padding-left: 30px;
+}
+.field_content{
+    margin-top: 95px;
+    margin-right: 40px;
+    display: block;
+    
+}
+
+
+.article{
+    padding-bottom: 50px;
+    
+    
+}
+.article-h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.article-text{
+    font-size: 24px;
+    
+}
+
+.link_read-post{
+    padding-top: 10px;
+    float: right;
+    margin-right: 35px;
+}
+.link_read-post button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category{
+    min-width: 100%;
+    display: flex;  
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+}
+.time-category{
+    
+    margin-left: auto;
+    
+}
+.addpost-form{
+    padding-top: 30px;
+}
+i{
+    padding-right: 5px;
+}
+.pagination{
+    width: 100%;
+}
+  
+.paginator{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+.paginator-a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+.paginator-a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+.paginator-a:hover:not(.active) {background-color: #ddd;}
+
+.about-text{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.about_my_name{
+    font-weight: bold;
+}
+.addpost-form{
+    padding-top: 30px;
+}
+.about-h1{
+    color: black;
+}
+
+.label-group{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.contact-p{
+    font-size: 20px;
+}
+.contact-a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(143, 124, 0);
+}
+i{
+    padding-right: 5px;
+}
+.errorlist li{
+    
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: rgb(143, 124, 0);
+}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="list-articles">
+
+
+    {% for p in post %}
+
+    <div class="article">
+        <h2 class="article-h2">{{ p.title }}</h2>
+        <div class="article-text"> {{ p.content | truncatewords:50 }} </div>   
+
+        <div class="category">
+            <p class="name-category">Категория: {{p.cat}}</p>
+            <p class="author-name">Автор: {{p.author}}</p>
+            <p class="time-category">Добавлен: {{p.time_create}}</p>
+        </div>  
+           
+        <p class="link_read-post"><button type="button" class="btn btn-outline-info"><a href="{{ p.get_absolute_url }}">Читать пост</a></button></p>
+    </div>  
+
+    {% if not forloop.last %}
+    <hr>
+    {% endif %}
+    {% endfor %}    
+</div>
+
+{% endblock %}
+
+{% block navigation %}
+{% if page_obj.has_other_pages %}
+    
+    <div class="pagination">
+        <div class="paginator">
+        {% if page_obj.has_previous %}
+            <a class='paginator-a' href="?page={{page_obj.previous_page_number}}">&laquo;</a>
+        {% endif %}
+            {% for p in paginator.page_range %}
+            
+                <a class='paginator-a' href="?page={{p}}">{{p}}</a>
+            
+            {% endfor %}
+        {% if page_obj.has_next %}
+            <a class='paginator-a' href="?page={{page_obj.next_page_number}}">&raquo;</a>
+        {% endif %}
+        </div>
+    </div>
+{% endif %}
+{% endblock %}

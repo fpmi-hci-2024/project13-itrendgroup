@@ -1,0 +1,16 @@
+{% load news_tags %}
+{% get_cat as cat%}
+<nav>
+    
+    <h1 class="right_menu-h1">Категории</h1>
+    <ul class="right_menu-type">
+
+        {% for c in cat %}
+
+            <li><a href="{{ c.get_absolute_url}}"><i class="{{ c.icon }}" ></i>{{ c.name }}</a> </li>
+    
+        {% endfor %}
+        
+        
+    </ul>
+</nav>

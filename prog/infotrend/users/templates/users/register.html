@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    
+
+<h1 class="about-h1">Регистрация</h1>
+
+<form class='addpost-form' action="" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{next}}">
+    {{ form.as_p }}
+    <p id='but'><button type="submit" class="btn btn-outline-info">Регистрация</button></p>
+    
+</form>
+</body>
+{% endblock %}
