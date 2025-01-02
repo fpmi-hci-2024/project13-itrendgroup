@@ -17,5 +17,6 @@ https://github.com/fpmi-hci-2024/project13a-web-itrendgroup
 https://github.com/fpmi-hci-2024/project13a-backend-itrendgroup
 
 ### Usage
+![alt text](https://github.com/fpmi-hci-2024/project13-itrendgroup/blob/main/docs/gameplay.png?raw=true)
 
 ### Contributing
